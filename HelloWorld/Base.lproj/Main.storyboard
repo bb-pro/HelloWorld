@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,21 +12,49 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    <view key="view" contentMode="scaleToFill" id="vQS-Iz-sV3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PL6-ch-WTS">
+                                <rect key="frame" x="16" y="106.66666666666669" width="396" height="227"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="9pD-gB-pyc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-Tk-aXS">
+                                <rect key="frame" x="16" y="349.66666666666669" width="396" height="227.00000000000006"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="N7Q-nd-wi4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MKW-e9-Xl5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xDt-Tk-aXS" firstAttribute="leading" secondItem="MKW-e9-Xl5" secondAttribute="leading" constant="16" id="5zS-LQ-7kr"/>
+                            <constraint firstItem="PL6-ch-WTS" firstAttribute="leading" secondItem="MKW-e9-Xl5" secondAttribute="leading" constant="16" id="CDM-11-BbR"/>
+                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="trailing" secondItem="xDt-Tk-aXS" secondAttribute="trailing" constant="16" id="J43-ef-w6Z"/>
+                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="trailing" secondItem="PL6-ch-WTS" secondAttribute="trailing" constant="16" id="Q4K-5X-vZ6"/>
+                            <constraint firstItem="PL6-ch-WTS" firstAttribute="centerX" secondItem="vQS-Iz-sV3" secondAttribute="centerX" id="V65-6U-Ben"/>
+                            <constraint firstItem="xDt-Tk-aXS" firstAttribute="centerY" secondItem="vQS-Iz-sV3" secondAttribute="centerY" id="XK7-Zz-2Nd"/>
+                            <constraint firstItem="xDt-Tk-aXS" firstAttribute="top" secondItem="PL6-ch-WTS" secondAttribute="bottom" constant="16" id="lwP-B2-YZN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="-2"/>
+            <point key="canvasLocation" x="57.209302325581397" y="-2.5751072961373391"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
