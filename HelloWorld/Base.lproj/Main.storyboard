@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,49 +13,53 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vQS-Iz-sV3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mh-c8-SMH">
-                                <rect key="frame" x="16" y="68" width="382" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-4t-hHK">
+                                <rect key="frame" x="16" y="208" width="398" height="42"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26p-HC-tmt">
+                                <rect key="frame" x="117.66666666666669" y="631.66666666666663" width="195" height="45.333333333333371"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="4WJ-t8-hsq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170.99999999999997" id="wAY-bU-Jn3"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lo-kR-slw">
-                                <rect key="frame" x="16" y="284" width="382" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="aa8-tf-Dl5"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="qkZ-26-H3O"/>
-                                </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Показать приветсвие"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Greeting ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="greetingButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sv2-iK-Yfn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MKW-e9-Xl5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0mh-c8-SMH" firstAttribute="centerX" secondItem="vQS-Iz-sV3" secondAttribute="centerX" id="4eV-gr-Uzi"/>
-                            <constraint firstItem="6lo-kR-slw" firstAttribute="top" secondItem="0mh-c8-SMH" secondAttribute="bottom" constant="16" id="LWi-t0-Ryx"/>
-                            <constraint firstItem="0mh-c8-SMH" firstAttribute="leading" secondItem="MKW-e9-Xl5" secondAttribute="leading" constant="16" id="MT0-Nt-bbr"/>
-                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="trailing" secondItem="0mh-c8-SMH" secondAttribute="trailing" constant="16" id="NpZ-9b-Wjc"/>
-                            <constraint firstItem="6lo-kR-slw" firstAttribute="leading" secondItem="MKW-e9-Xl5" secondAttribute="leading" constant="16" id="PAe-x0-wvo"/>
-                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="trailing" secondItem="6lo-kR-slw" secondAttribute="trailing" constant="16" id="eoq-3G-kM9"/>
-                            <constraint firstItem="0mh-c8-SMH" firstAttribute="top" secondItem="MKW-e9-Xl5" secondAttribute="top" constant="20" id="wrF-Xo-88P"/>
+                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="trailing" secondItem="Nfj-4t-hHK" secondAttribute="trailing" constant="16" id="8dO-iI-MHQ"/>
+                            <constraint firstItem="Nfj-4t-hHK" firstAttribute="leading" secondItem="MKW-e9-Xl5" secondAttribute="leading" constant="16" id="MhK-O9-H4B"/>
+                            <constraint firstItem="MKW-e9-Xl5" firstAttribute="bottom" secondItem="26p-HC-tmt" secondAttribute="bottom" constant="221" id="XGn-SN-ael"/>
+                            <constraint firstItem="Nfj-4t-hHK" firstAttribute="top" secondItem="MKW-e9-Xl5" secondAttribute="top" constant="149" id="jdp-dG-87Y"/>
+                            <constraint firstItem="26p-HC-tmt" firstAttribute="centerX" secondItem="vQS-Iz-sV3" secondAttribute="centerX" id="tKe-Lv-ME4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="26p-HC-tmt" id="tgm-mr-i1F"/>
+                        <outlet property="greetingLabel" destination="Nfj-4t-hHK" id="Vn7-61-Wbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.209302325581397" y="-2.5751072961373391"/>
+            <point key="canvasLocation" x="56.521739130434788" y="-2.6785714285714284"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
